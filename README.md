@@ -296,7 +296,7 @@ import { stringToBigInt } from "k-number-utils"
 // Basic ASCII string - returns BigIntCoercion instance
 const hello = stringToBigInt("hello")
 hello.toBigInt() // 448378203247n
-hello.toInt32() // 1818522991
+hello.toInt32() // 1701604463
 hello.toUint8() // 111 (lower 8 bits)
 
 // Single character
@@ -312,8 +312,8 @@ stringToBigInt("🚀").toBigInt() // 4036991616n
 stringToBigInt("🚀").toInt32() // -257975680
 
 // Chinese characters
-stringToBigInt("你好").toBigInt() // 15060223084n
-stringToBigInt("你好").toChar() // '好' (lower 16 bits)
+stringToBigInt("你好").toBigInt() // 251503099356605n
+stringToBigInt("你好").toChar() // 'ꖽ' (lower 16 bits)
 
 // Mixed content
 const mixed = stringToBigInt("Hello 🌍")

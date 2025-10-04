@@ -10,7 +10,7 @@
  * const bn = new BigIntCoercion(123456789n);
  * bn.toInt32();     // 123456789
  * bn.toUint8();     // 21 (truncated to 8 bits)
- * bn.toChar();      // 'Í' (Unicode character from lower 16 bits)
+ * bn.toChar();      // '촕' (Unicode character from lower 16 bits)
  *
  * @example
  * // Collision example - large values wrap around
@@ -242,7 +242,7 @@ export class BigIntCoercion {
    * @example
    * new BigIntCoercion(65n).toChar();      // 'A'
    * new BigIntCoercion(8364n).toChar();    // '€' (Euro sign)
-   * new BigIntCoercion(128512n).toChar();  // '😀' (would wrap to 16 bits)
+   * new BigIntCoercion(128512n).toChar();  // '' (wraps to 16 bits: 62976)
    */
   toChar(): string {
     const codePoint = this.toUint16()
