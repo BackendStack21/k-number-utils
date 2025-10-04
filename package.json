@@ -10,7 +10,7 @@
     "README.md",
     "LICENSE"
   ],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "devDependencies": {
     "@types/bun": "latest",
