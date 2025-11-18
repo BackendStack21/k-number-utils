@@ -492,7 +492,7 @@ for (let i = 0; i < 10000; i++) {
 
 **Minimum Requirements:**
 
-- ✅ Node.js 10.4.0+ (BigInt support)
+- ✅ Node.js 11.0.0+ (BigInt and TextEncoder support)
 - ✅ Chrome 67+
 - ✅ Firefox 68+
 - ✅ Safari 14+
